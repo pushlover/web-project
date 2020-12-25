@@ -1,0 +1,81 @@
+function mover(){
+    if (pacmacr.dir==="right"){
+        if (map[pacmacr.r][pacmacr.l + 1] == 2) {
+                pacmacr.dir='up'
+                
+                // map[pacmac.r][pacmac.l] = 3
+                // pacmac.l += 1
+                // map[pacmac.r][pacmac.l] = 4
+            }
+        else if (map[pacmacr.r][pacmacr.l + 1] == 1){
+            map[pacmacr.r][pacmacr.l] = 1
+            pacmacr.l += 1
+            map[pacmacr.r][pacmacr.l] = 6
+        }
+        else if(map[pacmacr.r][pacmacr.l + 1] == 4){
+            map[pacmacr.r][pacmacr.l] = 1
+            pacmacr.l += 2
+            map[pacmacr.r][pacmacr.l] = 6
+        }
+    }
+    else if(pacmacr.dir==="up"){
+        if (map[pacmacr.r - 1][pacmacr.l] == 2) {
+            
+            pacmacr.dir='left'
+            // map[pacmac.r][pacmac.l] = 3
+            // pacmac.r -= 1
+            // map[pacmac.r][pacmac.l] = 4
+        }
+        else if (map[pacmacr.r - 1][pacmacr.l] == 1) {
+            map[pacmacr.r][pacmacr.l] = 1
+            pacmacr.r -= 1
+            map[pacmacr.r][pacmacr.l] = 6
+        }
+        else if (map[pacmacr.r - 1][pacmacr.l] == 4) {
+            map[pacmacr.r][pacmacr.l] = 1
+            map[pacmacr.r-1][pacmacr.l] = 1
+            pacmacr.r -= 2
+            map[pacmacr.r][pacmacr.l] = 6
+        }
+    }
+    else if(pacmacr.dir==="left"){
+        if (map[pacmacr.r][pacmacr.l - 1] == 2) {
+            pacmacr.dir='down'
+            // map[pacmac.r][pacmac.l] = 3
+            // pacmac.l -= 1
+            // map[pacmac.r][pacmac.l] = 4
+        }
+        else if (map[pacmacr.r][pacmacr.l-1] == 1){
+            map[pacmacr.r][pacmacr.l] = 1
+            pacmacr.l -= 1
+            map[pacmacr.r][pacmacr.l] = 6
+        }
+        else if(map[pacmacr.r][pacmacr.l + 1] == 4){
+            map[pacmacr.r][pacmacr.l] = 1
+
+            pacmacr.l -= 2
+            map[pacmacr.r][pacmacr.l] = 6
+        }
+    }
+    else if(pacmacr.dir==="down"){
+        if (map[pacmacr.r + 1][pacmacr.l] == 2) {
+            pacmacr.dir='right'
+            
+            // map[pacmac.r][pacmac.l] = 3
+            // pacmac.r += 1
+            // map[pacmac.r][pacmac.l] = 4
+        }
+        else if (map[pacmacr.r + 1][pacmacr.l] == 1) {
+            map[pacmacr.r][pacmacr.l] = 1
+            pacmacr.r += 1
+            map[pacmacr.r][pacmacr.l] = 6
+        }
+        else if (map[pacmacr.r +1][pacmacr.l] == 4) {
+            map[pacmacr.r][pacmacr.l] = 1
+            map[pacmacr.r+1][pacmacr.l] = 1
+            pacmacr.r += 2
+            map[pacmacr.r][pacmacr.l] = 6
+        }
+    }
+    draw();
+}

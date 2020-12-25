@@ -1,0 +1,42 @@
+body {
+    background-color: gainsboro;
+}
+
+#world {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 0px;
+}
+
+#world>div {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+}
+
+/* 
+.pacmac {
+    background: url(../img/pacmac.png);
+}
+
+.pacmac.up {
+    background: url(../img/pacmac-up.png);
+}
+
+.pacmac.down {
+    background: url(../img/pacmac-down.png);
+}
+
+.pacmac.left {
+    background: url(../img/pacmac-left.png);
+}
+
+.pacmac.right {
+    background: url(../img/pacmac-right.png);
+}
+
+.ground {
+    background: url(../img/coin.jpg);
+} */
