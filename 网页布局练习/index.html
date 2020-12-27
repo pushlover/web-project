@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{
+            margin:0;
+            padding:0;
+        }
+        .nav{
+           
+            height: 50px;
+            text-align:center;  
+            background-color: darkred;
+            margin-bottom: 20px;
+        }
+        .nav ul{
+            height: 100%;
+            text-align:center;  
+            display:inline-block;
+            width: 960px;
+            list-style: none;
+            float: center;
+           
+        }
+        .nav ul li:hover{
+           color: rgba(255, 0, 0, 0.781);
+           
+        }
+        .u{
+            height:50px; 
+            line-height:50px;
+            text-align: center;
+            list-style: none;
+            display: inline-block;
+            font:bold 16px/50px '雅黑';
+            color: pink;
+            width:136px;
+            border-left:2px solid white;
+            
+            float: left;
+            color: white;
+            background-color:gray;
+            margin:auto;
+        }
+        .u1{
+            height:50px; 
+            line-height:50px;
+           
+            list-style: none;
+            display: inline-block;
+            font:bold 16px/50px '雅黑';
+            color: pink;
+            width:132px;
+           
+            
+            float: left;
+            color: white;
+            background-color:gray;
+            margin:auto;
+        }
+        .content{
+            display: block;
+            height: 238px;
+            width: 960px;
+            margin: auto;
+            /* float: center; */
+            margin-bottom: 20px;
+            background-color: pink;
+         
+        }
+        .content1{
+            flex: 1 1 960px;
+            display: flex;
+            text-align:center;
+            width: 960px;
+            margin: auto;
+            /* float: center; */
+            background-color: pink;
+           
+         
+        }
+        h3{
+            text-align: left;
+            display: block;
+            list-style: none;
+            color: white;
+            font-size:16px; 
+            padding-top: 6px;
+            padding-left: 25px;
+            padding-bottom: 6px;
+            
+            background-color: darkred;
+           
+        }
+     
+
+        .d{
+          
+            font-size:16px; 
+            padding-top: 6px;
+            padding-left: 25px;
+            padding-bottom: 6px;
+            list-style: none;
+            color: white;
+            background-color:#333333;
+
+        }
+        .d:hover{
+            color:red;
+            text-decoration: underline;
+        }
+        .f{
+            background-color: pink;
+            
+            justify-content: left;
+            text-align: left;
+            width: 160px;
+            
+            
+        }
+        /* .f:hover{
+            background-color: greenyellow;
+        } */
+        h4{
+            text-align: left;
+            display: block;
+            list-style: none;
+            color: black;
+            font-size:16px; 
+            padding-top: 5px;
+           
+            padding-bottom: 5px;
+            
+           
+        }
+        h6{
+            text-align: left;
+            display: block;
+            list-style: none;
+            color: rgba(0,0,0,0.7);
+            font-size:10px ; 
+            padding-top: 5px;
+           
+            padding-bottom: 5px;
+        }
+        body{
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    
+    <img src="logo.jpg">
+    <div class="nav">
+        <ul>
+            <li class="u1"><a href=""></a>
+                首页
+            </li>
+            <li class="u"><a href=""></a>
+                眼镜大全
+            </li>
+            <li class="u"><a href=""></a>
+                护眼知识
+            </li>
+            <li class="u"><a href=""></a>
+                眼镜护理
+            </li>
+            <li class="u"><a href=""></a>
+                时尚搭配
+            </li>
+            <li class="u"><a href=""></a>
+                好点推荐
+            </li>
+            <li  class="u" ><a href=""></a>
+                关注我们
+            </li>
+        </ul>
+
+    </div>
+    
+    <div class="content">
+        <div style="width: 275px;box-sizing: border-box;
+       
+       float: left;
+        min-height: 1px;">
+            <ul>
+                <h3 >
+                    网站公告
+                </h3>
+                <li class="d">
+                    <img src="xing.jpg">
+                    2020年十大爆款太阳眼镜推荐
+                </li>
+                <li class="d">
+                    <img src="xing.jpg">
+                    2020年十大爆款太阳眼镜推荐
+                </li>
+                <li class="d">
+                    <img src="xing.jpg">
+                    2020年十大爆款太阳眼镜推荐
+                </li>
+                <li class="d">
+                    <img src="xing.jpg">
+                    2020年十大爆款太阳眼镜推荐
+                </li>
+                <li class="d">
+                    <img src="xing.jpg">
+                    2020年十大爆款太阳眼镜推荐
+                </li>
+                <li class="d">
+                    <img src="xing.jpg">
+                    2020年十大爆款太阳眼镜推荐
+                </li>
+            </ul>
+        </div>
+        
+        <div style="width: 670px; box-sizing: border-box;
+        text-align: right;
+        float: right;
+        min-height: 1px;
+        ">
+       
+                <img src="gonggao.jpg" style=" height: 238px;">
+           
+        </ul>
+       
+         </div>
+        </div>
+    </div>
+    <div style="height: 40px;  margin-top: 0px;background-color: pink;width: 960px;text-align: center;margin: 0 auto ;vertical-align: center; ">
+        <h4>
+            眼镜大全&nbsp&nbsp&nbsp&nbsp墨镜 | 近视眼学生眼镜 | 男士眼镜 | 女士眼镜 | 防辐射眼镜
+        </h4>
+    </div>
+    <div class="content1">
+        
+        <span class="f">
+            <ol>
+               
+                <img src= "tuijian-0.jpg" style="height: 120px; text-align: left;">
+                <h6>
+                    2020新款太阳镜推荐
+                </h6>
+            </ol>
+        </span>
+        
+        <span class="f">
+            <ol>
+                
+                <img src= "tuijian-1.jpg" style="height: 120px; text-align: left;">
+                <h6>
+                    2020新款太阳镜推荐
+                </h6>
+            </ol>
+        </span>
+        <span class="f">
+            <ol>
+               
+                <img src= "tuijian-0.jpg" style="height: 120px; text-align: left;">
+                <h6>
+                    2020新款太阳镜推荐
+                </h6>
+            </ol>
+        </span>
+        <span class="f">
+            <ol>
+                
+                <img src= "tuijian-3.jpg" style="height: 120px; text-align: left;">
+                <h6>
+                    2020新款太阳镜推荐
+                </h6>
+            </ol>
+        </span>
+        <span class="f">
+            <ol>
+                
+                <img src= "tuijian-1.jpg" style="height: 120px; text-align: left;">
+                <h6>
+                    2020新款太阳镜推荐
+                </h6>
+            </ol>
+        </span>
+        <span class="f">
+            <ol>
+               
+                <img src= "tuijian-3.jpg" style="height: 120px; text-align: left;">
+                <h6>
+                    2020新款太阳镜推荐
+                </h6>
+            </ol>
+        </span>
+    </div>
+</body>
+</html>
