@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../css/home.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="../test/jquery-1.11.0.js"></script>
+    <style type="text/css">
+        .head1{
+            color: #10b6d7;
+            margin-left: 0px;
+            margin-top: 20px;
+        }
+        #h2{
+            color: orange;
+            margin-left: 40%;
+            margin-top: 10px;
+            font-size: 25px;
+        }
+        body{
+            /*background-color: rgba(99, 215, 188, 0.99);*/
+            background-color: white;
+            /*background-image: url("pic/feiyan1.jpg");*/
+            /*background-size: 100% 100%;*/
+            /*background-repeat: no-repeat;*/
+        }
+        .wenzi{
+            margin-left: 50px;
+
+        }
+        .header1{
+            background-color: white;
+            /*width: 50%;*/
+            /*margin: auto;*/
+            /* margin-left: 25px; */
+            /* border: black; */
+            /* border-width: 0.05px; */
+            /* border-style: solid ; */
+        }
+        .contaner {
+            margin: auto;
+        }
+        div:hover.newsdiv{
+            background-color: #fefbb3;
+        }
+        /*h1{*/
+        /*margin-left: 30px;*/
+        /*}*/
+        /*.main-function li a:hover{*/
+        /*color: #fefbb3;*/
+        /*}*/
+
+    </style>
+    <link href="home.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/echarts.min.js"></script>
+    <script type="text/javascript" src="js/map/china.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+</head>
+<body  >
+<div id="head">
+    <div class="Header" style="width: 1200px;margin: 0 auto">
+        <h1><font>XX大学<b>|</b>疫情研究中心</font><br></h1>
+    
+
+    </div>
+    <div style="padding-bottom:5px">
+        <ul style="list-style: none">
+            <span>
+            <li style="display: inline-block">
+                <a class="home-link" href="#"onclick="change_div('shouye')"; style="text-decoration:none; color: black;">
+                    <font size="4px">
+                        首页</font></a>
+            </li>
+            </span>
+            <span>
+            <li style="display: inline-block">
+                <a class="function-link" href="#" onclick="change_div('guonei')"; style="text-decoration:none; color: black;"><font size="4px">国内疫情 </font></a>
+            </li>
+        </span>
+        <span>
+            <li style="display: inline-block">
+                <a class="function-link" href=""style="text-decoration:none; color: black;"><font size="4px">国外疫情  </font></a>
+            </li>
+        </span>
+        <span>
+            <li style="display: inline-block">
+                <a class="function-link" href=""style="text-decoration:none; color: black;"><font size="4px">境外输入</font></a>
+            </li>
+        </span>
+        <span>
+            <li style="display: inline-block">
+                <a class="function-link" href=""style="text-decoration:none; color: black;"><font size="4px">疫情预测</font></a>
+            </li>
+        </span>
+        <span>
+            <li style="display: inline-block">
+                <a class="function-link" href=""style="text-decoration:none; color: black;"><font size="4px">关于</font></a>
+            </li>
+        </span>
+        </ul>
+    </div>
+
+</div>
+<!--<script>-->
+    <!--$("#head").load("4.html");-->
+    <!--// $("#page2").load("first.html");-->
+<!--</script>-->
+<!--&lt;!&ndash;<!- #include virtual="test.html" ->&ndash;&gt;-->
+<!--<!- #include file="footer.html" ->-->
+<div id="shouye" >
+    <div class="miaoshu" style="margin: 0 auto;position: center;width: 1100px">
+        <div class="picfeiyan"style="float: left;margin-top: 100px">
+
+            <img src="../pic/feiyanpic.jpg" width="400px" height="347px;margin-left: 40px">
+        </div>
+        <div class="wenzi"style="float: left;width: 600px;margin-left: 60px">
+            <p><font size="6px">新型冠状病毒肺炎</font></p>
+            <p><font size="3px"><font color="#00bfff">新冠肺炎</font>一般指新型冠状病毒肺炎</font></p>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新型冠状病毒肺炎（Corona Virus Disease 2019，COVID-19），简称“新冠肺炎”，
+                世界卫生组织命名为“2019冠状病毒病"，是指2019新型冠状病毒感染导致的肺炎。
+                2019年12月以来，湖北省武汉市部分医院陆续发现了多例有华南海鲜市场暴露史的不明原因肺炎病例，
+                现已证实为2019新型冠状病毒感染引起的急性呼吸道传染病。
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2020年2月11日，世界卫生组织总干事谭德塞在瑞士日内瓦宣布，将新型冠状病毒感染的肺炎命名为“COVID-19”。
+                2月21日，国家卫生健康委发布了关于修订新型冠状病毒肺炎英文命名事宜的通知，
+                决定将“新型冠状病毒肺炎”英文名称修订为“COVID-19”，
+                与世界卫生组织命名保持一致，中文名称保持不变。
+                2020年8月18日，国家卫健委修订完成了新型冠状病毒肺炎诊疗方案（试行第八版）。
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2020年3月11日，世界卫生组织总干事谭德塞宣布，根据评估，世卫组织认为当前新冠肺炎疫情可被称为全球大流行（pandemic）。
+                4月4日，中国举行全国性哀悼活动。在此期间，全国和驻外使领馆下半旗志哀，全国停止公共娱乐活动。
+                4月4日10时起，全国人民默哀3分钟，汽车、火车、舰船鸣笛，防空警报鸣响。
+                9月3日，世卫组织新冠肺炎疫情应对评估专家组共同主席在成员国吹风会上宣布了专家组成员名单，
+                中国工程院院士、广州市呼吸疾病研究所所长钟南山入选。
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;截至2020年10月6日24时，现有确诊病例205例，累计治愈出院病例80650例，累计死亡病例4634例，累计报告确诊病例85489例，现有疑似病例4例。
+            </p>
+        </div>
+
+    </div>
+
+    <div class="tezheng" style="width:1100px;position:center;margin: 0 auto;margin-left: 140px;margin-top: 20px">
+        <p><font size="5px"><b>病毒特征</b><hr></font></p>
+        <p><font size="4px"><b>发病特征</b></font> </p>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;根据现有病例资料，新型冠状病毒肺炎以发热、干咳、乏力等为主要表现，
+            少数患者伴有鼻塞、流涕、腹泻等上呼吸道和消化道症状。重症病例多在1周后出现呼吸困难，
+            严重者快速进展为急性呼吸窘迫综合征、脓毒症休克、难以纠正的代谢性酸中毒和出凝血功能障碍及多器官功能衰竭等。
+            值得注意的是重症、危重症患者病程中可为中低热，甚至无明显发热。轻型患者仅表现为低热、轻微乏力等，无肺炎表现。
+            从目前收治的病例情况看，多数患者预后良好，少数患者病情危重。老年人和有慢性基础疾病者预后较差。
+            儿童病例症状相对较轻。
+        </p>
+        <p><font size="4px"><b>流行特征</b></font> </p>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;世卫组织总干事谭德塞2020年3月11日说，新冠肺炎疫情已具有大流行特征。
+        </p>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;谭德塞在日内瓦举行的例行记者会上说，疫情的传播程度和严重性令人深感担忧，“因此我们评估认为新冠肺炎疫情已具有大流行特征”。
+        </p>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;他说：“我们以前从未见过冠状病毒引发的大流行。我们以前也从未见过得到控制的大流行。”
+        </p>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;他强调，将新冠肺炎疫情描述为“大流行”不会改变世卫组织对其威胁的评估，
+            “它不会改变世卫组织正在做的事情，也不会改变各国应该做的事情”。
+        </p>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新型冠状病毒肺炎，正处在早期快速变化阶段。
+            中国已公布导致新型冠状病毒肺炎的新型冠状病毒的全基因组序列，
+            这将有助于全球科学家和公共卫生组织加入诊断试剂的研发，及病毒致病性研究。
+        </p>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 国家卫健委已发布1号公告，将新型冠状病毒感染的肺炎纳入传染病防治法规定的乙类传染病，但采取甲类传染病的预防、控制措施，同时将其纳入检疫传染病管理。
+        </p>
+    </div>
+    <div style="position: center;margin: 0 auto;width: 1100px">
+        <div class="row_Card" style="position: center;margin: 0 auto">
+            <p><font color="#6495ed" size="6px">--------------------------------------新闻资讯-------------------------------</font></p>
+
+            <div   class="Home_Card" style="width: 500px ;float: left" onclick=myFunction1()>
+                <img class="picstyle" src="../pic/1.PNG" style="width: 420px;">
+                <br>
+                <p class="fontstyle" >2020-12-16 17:11</p>
+                <h2 style="width: 420px">
+                    大连4例无症状感染者为同一班组工友
+                </h2>
+                <p class="fontstyle_context" style="width: 420px">12月16日下午，大连市召开新冠肺炎疫情防控工作第四十九次新闻发布会。大连市卫健委副主任赵连介绍，12月15日，相关工作部门在对金普新区大连港毅都冷链有限公司“应检尽检”人员定期例行检测中，发现4例新冠病毒无症状感染者，为同一班组工友。</p>
+            </div>
+
+            <div   class="Home_Card" style="width: 500px ;float: left" onclick=myFunction2()>
+                <p class="fontstyle" >2020-12-04 10:25</p>
+                <h2 style="width: 420px">
+                    国产新冠疫苗目前进展如何？产能有多大？
+                </h2>
+                <p class="fontstyle_context" style="width: 420px">据新华社消息，国务院副总理孙春兰、国务委员王勇12月2日在北京调研新冠病毒疫苗研发和生产准备工作，实地考察中国食品药品检定研究院、北京科兴公司、国药中生北京公司。孙春兰在调研中指出，下一步要做好新冠疫苗大规模生产准备。</p>
+            </div>
+
+            <div   class="Home_Card" style="width: 500px ;float: left" onclick=myFunction3()>
+                <p class="fontstyle" >2020-12-04 11:00</p>
+                <h2 style="width: 420px">
+                    元旦春节将至 “大迁徙”如何防控新冠疫情
+                </h2>
+                <p class="fontstyle_context" style="width: 420px">不知不觉中，新冠疫情发生快一年了，去年春节里的很多非常防护，如今已经成为日常的防护手段，比如戴口罩、不聚集、勤洗手。</p>
+            </div>
+
+        </div>
+
+
+
+        <div class="row_Card"style="position: center;margin: 0 auto">
+            <div   class="Home_Card" style="width: 345px ;float: left" onclick=myFunction1()>
+                <img class="picstyle" src="../pic/tb1.gif">
+                <br>
+                <p class="fontstyle">2020-12-16 17:11</p>
+                <h2>
+                    大连4例无症状感染者为同一班组工友
+                </h2>
+                <p class="fontstyle_context">12月16日下午，大连市召开新冠肺炎疫情防控工作第四十九次新闻发布会。大连市卫健委副主任赵连介绍，12月15日，相关工作部门在对金普新区大连港毅都冷链有限公司“应检尽检”人员定期例行检测中，发现4例新冠病毒无症状感染者，为同一班组工友。</p>
+            </div>
+
+            <div   class="Home_Card" style="width: 345px ;float: left" onclick=myFunction2()>
+                <img class="picstyle" src="../pic/timg.jpg">
+                <br>
+                <p class="fontstyle">2020-12-04 10:25</p>
+                <h2>
+                    国产新冠疫苗目前进展如何？产能有多大？
+                </h2>
+                <p class="fontstyle_context">据新华社消息，国务院副总理孙春兰、国务委员王勇12月2日在北京调研新冠病毒疫苗研发和生产准备工作，实地考察中国食品药品检定研究院、北京科兴公司、国药中生北京公司。孙春兰在调研中指出，下一步要做好新冠疫苗大规模生产准备。</p>
+            </div>
+
+            <div   class="Home_Card" style="width: 345px ;float: left" onclick=myFunction3()>
+                <img class="picstyle" src="../pic/4.PNG">
+                <br>
+                <p class="fontstyle">2020-12-04 11:00</p>
+                <h2>
+                    元旦春节将至 “大迁徙”如何防控新冠疫情
+                </h2>
+                <p class="fontstyle_context">不知不觉中，新冠疫情发生快一年了，去年春节里的很多非常防护，如今已经成为日常的防护手段，比如戴口罩、不聚集、勤洗手。</p>
+            </div>
+
+        </div>
+
+
+
+        <div class="row_Card"style="position: center;margin: 0 auto">
+            <div   class="Home_Card" style="width: 345px ;float: left" onclick=myFunction1()>
+                <img class="picstyle" src="../pic/3.PNG">
+                <br>
+                <p class="fontstyle">2020-12-16 17:11</p>
+                <h2>
+                    大连4例无症状感染者为同一班组工友
+                </h2>
+                <p class="fontstyle_context">12月16日下午，大连市召开新冠肺炎疫情防控工作第四十九次新闻发布会。大连市卫健委副主任赵连介绍，12月15日，相关工作部门在对金普新区大连港毅都冷链有限公司“应检尽检”人员定期例行检测中，发现4例新冠病毒无症状感染者，为同一班组工友。</p>
+            </div>
+
+            <div   class="Home_Card" style="width: 345px ;float: left" onclick=myFunction2()>
+                <img class="picstyle" src="../pic/2.PNG">
+                <br>
+                <p class="fontstyle">2020-12-04 10:25</p>
+                <h2>
+                    国产新冠疫苗目前进展如何？产能有多大？
+                </h2>
+                <p class="fontstyle_context">据新华社消息，国务院副总理孙春兰、国务委员王勇12月2日在北京调研新冠病毒疫苗研发和生产准备工作，实地考察中国食品药品检定研究院、北京科兴公司、国药中生北京公司。孙春兰在调研中指出，下一步要做好新冠疫苗大规模生产准备。</p>
+            </div>
+
+            <div   class="Home_Card" style="width: 345px ;float: left" onclick=myFunction3()>
+                <img class="picstyle" src="../pic/1.PNG">
+                <br>
+                <p class="fontstyle">2020-12-04 11:00</p>
+                <h2>
+                    元旦春节将至 “大迁徙”如何防控新冠疫情
+                </h2>
+                <p class="fontstyle_context">不知不觉中，新冠疫情发生快一年了，去年春节里的很多非常防护，如今已经成为日常的防护手段，比如戴口罩、不聚集、勤洗手。</p>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+
+<div id="guonei"style=" display: none;">
+    <div class="body" style="background-color: #f1f9fe ;width: 900px;margin: 0 auto;">
+
+
+        <div class="daohanglan"style="width:900px;background-color: white;height: 50px">
+            <div style="width: 75%;margin-left: 13%;background-color: darkseagreen">
+                <ul style="list-style: none" >
+                    <div style="background-color:white ;float: left;width: 20%">
+                        <li style="color: gray;display: inline-block;position: center;margin: 0 auto;font-size: 20px;margin-top: 10px">
+                            <a href="#fenbu"style="text-decoration:none;color: gray;">实时数据</a> </li>
+                    </div>
+                    <div style="background-color: white;float: left;width: 20%">
+                        <li style="color: gray;display: inline-block;position: center;margin: 0 auto;font-size: 20px;margin-top: 10px">
+                            <a href="#relitu"style="text-decoration:none;color: gray;">数据图表</a></li>
+                    </div>
+                    <div style="background-color: white;float: left;width: 20%">
+                        <li style="color:gray;display: inline-block;position: center;margin: 0 auto;font-size: 20px;margin-top: 10px">
+                            <a href="#news"style="text-decoration:none;color: gray;">实时新闻</a></li>
+                    </div>
+                    <div style="background-color: white;float: left;width: 20%">
+                        <li style="color: gray;display: inline-block;position: center;margin: 0 auto;font-size: 20px;margin-top: 10px">
+                            <a href="#yimiao"style="text-decoration:none;color: gray;">疫苗</a></li>
+                    </div>
+                    <div style="background-color: white;float: left;width: 20%">
+                        <li style="color: gray;display: inline-block;position: center;margin: 0 auto;font-size: 20px;margin-top: 10px">
+                            <a href="#control"style="text-decoration:none;color: gray;">预防</a></li>
+                    </div>
+
+                </ul>
+            </div>
+
+
+        </div>
+        <div style="width: 900px;background-color: #f1f9fe">
+            <p class="head1"  id ="s1"><font size="10px">新型冠状病毒肺炎</font></p>
+            <h2 id="h2">疫情实时大数据</h2>
+        </div>
+        <div style="width: 900px;background-color: transparent">
+
+            <div class="contaner" style="width: 600px;background-color:transparent;margin: 0 auto">
+                <div class="header1">
+                    <div >
+                        <font size="4px" style="color: black; margin-left:100px;"><b>国内疫情</b></font>
+                        <font size="2px" style="color: gray;margin-left: 80px;margin-top: 5px">数据更新至<label id="timetable"></label></font>
+                        <script language="JavaScript">
+                            function get_time()//获取系统当前时间
+                            {
+                                var date=new Date();
+                                var year="",month="",day="",week="",hour="",minute="",second="";
+                                year=date.getFullYear();
+                                month=add_zero(date.getMonth()+1);
+                                day=add_zero(date.getDate());
+                                week=date.getDay();
+                                switch (date.getDay()) {
+                                    case 0:val="周日";break
+                                    case 1:val="周一";break
+                                    case 2:val="周二";break
+                                    case 3:val="周三";break
+                                    case 4:val="周四";break
+                                    case 5:val="周五";break
+                                    case 6:val="周六";break
+                                }
+                                hour=add_zero(date.getHours());
+                                minute=add_zero(date.getMinutes());
+                                second=add_zero(date.getSeconds());
+                                document.getElementById("timetable").innerHTML=" "+year+"-"+month+"-"+day+" "+hour+":"+minute+":"+second+" "+val;
+                            }
+                            function add_zero(temp)
+                            {
+                                if(temp<10) return "0"+temp;
+                                else return temp;
+                            }
+                            setInterval("get_time()",1000);
+                        </script>
+                        <hr>
+                        <div class="first">
+                            <div class="wenzi" style="background-color: white;margin-left: 5px;float: left;">
+                                <label class="shuoming" style="margin-left: 40px;" title="计算方法为：现有确诊数=累计确诊数-累计治愈数-累计死亡数"><font size="4px">现存确诊</font></label><br>
+                                <label style="margin-left: 50px;size: 4px;margin-top: 40px;color: red">5648</label><br>
+                                <label style="margin-left: 45px;margin-top: 40px;color: gray"><font size="2px">昨日</font></label><label style="color: red"><font size="2px">+6</font></label><br>
+                            </div>
+                            <div class="shuzi" style="background-color: white;margin-left: 5px;float: left;">
+                                <label class="shuoming"style="margin-left: 80px"title="无症状是指无相关临床症状，如发热、咳嗽、咽痛等可自我感知或可临床识别的症状与体征，但呼吸道等标本新冠病毒病原学检测阳性者"><font size="4px">现存无症状</font></label><br>
+                                <label style="margin-left: 105px;size: 4px;margin-top: 40px;color: red">1678</label><br>
+                                <label style="margin-left: 100px;margin-top: 40px;color: gray"><font size="2px">昨日</font></label><label style="color: red"><font size="2px">+1</font></label><br>
+                            </div>
+                            <div class="zengjia" style="background-color: white;margin-left: 5px;margin-right: 55px;float: left;">
+                                <label class="shuoming"style="margin-left: 80px"><font size="4px">现存重症</font></label><br>
+                                <label style="margin-left: 105px;size: 4px;margin-top: 40px;color: red">456</label><br>
+                                <label style="margin-left: 95px;margin-top: 40px;color: gray"><font size="2px">昨日</font></label><label style="color: red"><font size="2px">+3</font></label><br>
+                            </div>
+                        </div>
+
+                        <div class="second" >
+                            <div class="wenzi" style="background-color: white;margin-left: 5px;float: left;margin-top: 30px">
+                                <label class="shuoming" style="margin-left: 40px" ><font size="4px">累计确诊</font></label><br>
+                                <label style="margin-left: 55px;size: 4px;margin-top: 40px;color: red">1678</label><br>
+                                <label style="margin-left:50px;margin-top: 40px;color: gray"><font size="2px">昨日</font></label><label style="color: red"><font size="2px">+2</font></label><br>
+
+                            </div>
+                            <div class="shuzi" style="background-color: white;margin-left: 5px;float: left;;margin-top:30px">
+                                <label class="shuoming"style="margin-left: 85px"><font size="4px">累计治愈</font></label><br>
+                                <label style="margin-left: 100px;size: 4px;margin-top: 40px;color: red">5648</label><br>
+                                <label style="margin-left: 95px;margin-top: 40px;color: gray"><font size="2px">昨日</font></label><label style="color: red"><font size="2px">+1</font></label><br>
+                            </div>
+                            <div class="zengjia" style="background-color: white;margin-left: 5px;margin-right: 55px;margin-bottom: 50px;float: left;;margin-top: 30px">
+                                <label class="shuoming"style="margin-left: 95px"><font size="4px">现存疑似</font></label><br>
+                                <label style="margin-left: 115px;size: 4px;margin-top: 40px;color: red">456</label><br>
+                                <label style="margin-left: 105px;margin-top: 40px;color: gray"><font size="2px">昨日</font></label><label style="color: red"><font size="2px">+3</font></label><br>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="pic">
+                   
+                    <!--<p>全国疫情现存趋势图</p>-->
+                    <img src="../pic/3.PNG" width="600px" height="344">
+               
+                </div>
+            </div>
+
+
+            <div id="fenbu" style="width: 600px;background-color: white;margin-top: 90px;position: center;margin: 0 auto">
+                <div class="header2" style="margin-bottom: 0.5rem;display: flex;justify-content: flex-start;margin-top: 5px">
+                    <font style="margin-top: 10px"><b>国内各地疫情统计汇总</b></font>
+                </div>
+                <hr>
+                <div class="nationaltable">
+                    <table class="table">
+                        <thead>
+                        <tr class="trth" style="background-color: rgba(187, 196, 202, 0.33)">
+                            <th>
+                                <div>
+                                    <div style="margin-right: 3px;">疫情地区</div>
+                                </div>
+                            </th>
+                            <th>
+                                <div>
+                                    <div style="margin-right: 3px">新增</div>
+                                </div>
+                            </th>
+                            <th>
+                                <div>
+                                    <div style="margin-right: 3px">现有</div>
+                                </div>
+                            </th>
+                            <th>
+                                <div>
+                                    <div style="margin-right: 3px">累计</div>
+                                </div>
+                            </th>
+                            <th>
+                                <div>
+                                    <div style="margin-right: 3px">治愈</div>
+                                    <!-- <img src="icon.jpg" width="20px" height="20px"></img> -->
+                                </div>
+                            </th>
+                            <th>
+                                <div>
+                                    <div style="margin-right: 3px">死亡</div>
+                                </div>
+                            </th>
+                        </tr>
+
+                        </thead>
+
+                        <tbody>
+                        <tbody>
+                        <tr class="trth1">
+                            <td class="trtd"  style="text-align: center;background-color: #1ce2d6;size: 5px" ><div class="trtddiv"><div class="place " style="color: white;"><b>湖北</b></div></div></td>
+                            <td class="shuzi1" style="background-color: rgba(191,212,228,0.33);text-align: center">0</td>
+                            <td class="shuzi2" style="background-color: rgba(191,212,228,0.33);text-align: center">0</td>
+                            <td class="shuzi3" style="background-color: rgba(191,212,228,0.33);text-align: center">68149</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">63637</td>
+                            <td class="shuzi5" style="background-color: rgba(191,212,228,0.33);text-align: center">4512</td></tr>
+                        <tr class="trth1">
+                            <td width="10%" class="trtd"  style="text-align: center;background-color: #1ce2d6;size: 5px" ><div class="trtddiv"><div class="place " style="color: white;"><b>湖南</b></div></div></td>
+                            <td class="shuzi1" style="background-color: rgba(191,212,228,0.33);text-align: center">0</td>
+                            <td class="shuzi2" style="background-color: rgba(191,212,228,0.33);text-align: center">0</td>
+                            <td class="shuzi3" style="background-color: rgba(191,212,228,0.33);text-align: center">1020</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">1016</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">4</td></tr>
+                        <tr class="trth1">
+                            <td width="10%" class="trtd"  style="text-align: center;background-color: #1ce2d6;size: 5px" ><div class="trtddiv"><div class="place " style="color: white;"><b>安徽</b></div></div></td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">0</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">0</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">992</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">986</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">6</td></tr>
+                        <tr class="trth1">
+                            <td width="10%" class="trtd"  style="text-align: center;background-color: #1ce2d6;size: 5px" ><div class="trtddiv"><div class="place " style="color: white;"><b>新疆</b></div></div></td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">0</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">0</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">980</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">977</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">3</td></tr>
+                        <tr class="trth1">
+                            <td width="10%" class="trtd"  style="text-align: center;background-color: #1ce2d6;size: 5px" ><div class="trtddiv"><div class="place " style="color: white;"><b>江西</b></div></div></td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">0</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">0</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">935</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">934</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">1</td></tr>
+                        <tr class="trth1">
+                            <td width="10%" class="trtd"  style="text-align: center;background-color: #1ce2d6;size: 5px" ><div class="trtddiv"><div class="place " style="color: white;"><b>重庆</b></div></div></td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">0</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">0</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">590</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">584</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">6</td></tr>
+                        <tr class="trth1">
+                            <td width="10%" class="trtd"  style="text-align: center;background-color: #1ce2d6;size: 5px" ><div class="trtddiv"><div class="place " style="color: white;"><b>河北</b></div></div></td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">0</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">0</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">373</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">367</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">6</td></tr>
+                        <tr class="trth1">
+                            <td width="10%" class="trtd"  style="text-align: center;background-color: #1ce2d6;size: 5px" ><div class="trtddiv"><div class="place " style="color: white;"><b>甘肃</b></div></div></td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">0</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">0</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">182</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">180</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">2</td></tr>
+                        <tr class="trth1">
+                            <td width="10%" class="trtd"  style="text-align: center;background-color: #1ce2d6;size: 5px" ><div class="trtddiv"><div class="place " style="color: white;"><b>海南</b></div></div></td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">0</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">0</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">171</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">165</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">6</td></tr>
+                        <tr class="trth1">
+                            <td width="10%" class="trtd"  style="text-align: center;background-color: #1ce2d6;size: 5px" ><div class="trtddiv"><div class="place " style="color: white;"><b>吉林</b></div></div></td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">0</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">0</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">157</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">155</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">2</td></tr>
+                        <tr class="trth1">
+                            <td width="10%" class="trtd"  style="text-align: center;background-color: #1ce2d6;size: 5px" ><div class="trtddiv"><div class="place " style="color: white;"><b>贵州</b></div></div></td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">0</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">0</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">147</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">145</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">2</td></tr>
+                        <tr class="trth1">
+                            <td width="10%" class="trtd"  style="text-align: center;background-color: #1ce2d6;size: 5px" ><div class="trtddiv"><div class="place " style="color: white;"><b>宁夏</b></div></div></td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">0</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">0</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">75</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">75</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">0</td></tr>
+                        <tr class="trth1">
+                            <td width="10%" class="trtd"  style="text-align: center;background-color: #1ce2d6;size: 5px" ><div class="trtddiv"><div class="place " style="color: white;"><b>澳门</b></div></div></td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">0</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">0</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">46</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">46</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">0</td></tr>
+                        <tr class="trth1">
+                            <td width="10%" class="trtd"  style="text-align: center;background-color: #1ce2d6;size: 5px" ><div class="trtddiv"><div class="place " style="color: white;"><b>青海</b></div></div></td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">0</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">0</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">18</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">18</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">0</td></tr>
+                        <tr class="trth1">
+                            <td width="10%" class="trtd"  style="text-align: center;background-color: #1ce2d6;size: 5px" ><div class="trtddiv"><div class="place " style="color: white;"><b>西藏</b></div></div></td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">0</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">0</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">1</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">1</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">0</td></tr>
+                        <tr class="trth1">
+                            <td width="10%" class="trtd"  style="text-align: center;background-color: #1ce2d6;size: 5px" ><div class="trtddiv"><div class="place " style="color: white;"><b>辽宁</b></div></div></td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">1</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">1</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">290</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">287</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">2</td></tr>
+                        <tr class="trth2">
+                            <td width="10%" class="trtd"  style="text-align: center;background-color: #1ce2d6;size: 5px" ><div class="trtddiv"><div class="place " style="color: white;"><b>广西</b></div></div></td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">0</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">1</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">264</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">261</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">2</td></tr>
+                        <tr class="trth2">
+                            <td width="10%" class="trtd"  style="text-align: center;background-color: #1ce2d6;size: 5px" ><div class="trtddiv"><div class="place " style="color: white;"><b>山西</b></div></div></td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">0</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">3</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">223</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">220</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">0</td></tr>
+                        <tr class="trth2">
+                            <td width="10%" class="trtd"  style="text-align: center;background-color: #1ce2d6;size: 5px" ><div class="trtddiv"><div class="place " style="color: white;"><b>天津</b></div></div></td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">1</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">5</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">304</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">296</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">3</td></tr>
+                        <tr class="trth2">
+                            <td width="10%" class="trtd"  style="text-align: center;background-color: #1ce2d6;size: 5px" ><div class="trtddiv"><div class="place " style="color: white;"><b>河南</b></div></div></td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">1</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">5</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">304</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">296</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">3</td></tr>
+                        <tr class="trth2">
+                            <td width="10%" class="trtd"  style="text-align: center;background-color: #1ce2d6;size: 5px" ><div class="trtddiv"><div class="place " style="color: white;"><b>浙江</b></div></div></td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">1</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">5</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">304</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">296</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">3</td></tr>
+                        <tr class="trth2">
+                            <td width="10%" class="trtd"  style="text-align: center;background-color: #1ce2d6;size: 5px" ><div class="trtddiv"><div class="place " style="color: white;"><b>江苏</b></div></div></td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">1</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">5</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">304</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">296</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">3</td></tr>
+                        <tr class="trth2">
+                            <td width="10%" class="trtd"  style="text-align: center;background-color: #1ce2d6;size: 5px" ><div class="trtddiv"><div class="place " style="color: white;"><b>北京</b></div></div></td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">1</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">5</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">304</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">296</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">3</td></tr>
+                        <tr class="trth2">
+                            <td width="10%" class="trtd"  style="text-align: center;background-color: #1ce2d6;size: 5px" ><div class="trtddiv"><div class="place " style="color: white;"><b>黑龙江</b></div></div></td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">1</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">5</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">304</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">296</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">3</td></tr>
+                        <tr class="trth2">
+                            <td width="10%" class="trtd"  style="text-align: center;background-color: #1ce2d6;size: 5px" ><div class="trtddiv"><div class="place " style="color: white;"><b>山东</b></div></div></td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">1</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">5</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">304</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">296</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">3</td></tr>
+                        <tr class="trth2">
+                            <td width="10%" class="trtd"  style="text-align: center;background-color: #1ce2d6;size: 5px" ><div class="trtddiv"><div class="place " style="color: white;"><b>陕西</b></div></div></td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">1</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">5</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">304</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">296</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">3</td></tr>
+                        <tr class="trth2">
+                            <td width="10%" class="trtd"  style="text-align: center;background-color: #1ce2d6;size: 5px" ><div class="trtddiv"><div class="place " style="color: white;"><b>云南</b></div></div></td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">1</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">5</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">304</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">296</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">3</td></tr>
+                        <tr class="trth2">
+                            <td width="10%" class="trtd"  style="text-align: center;background-color: #1ce2d6;size: 5px" ><div class="trtddiv"><div class="place " style="color: white;"><b>内蒙古</b></div></div></td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">1</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">5</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">304</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">296</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">3</td></tr>
+                        <tr class="trth2">
+                            <td width="10%" class="trtd"  style="text-align: center;background-color: #1ce2d6;size: 5px" ><div class="trtddiv"><div class="place " style="color: white;"><b>福建</b></div></div></td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">1</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">5</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">304</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">296</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">3</td></tr>
+                        <tr class="trth2">
+                            <td width="10%" class="trtd"  style="text-align: center;background-color: #1ce2d6;size: 5px" ><div class="trtddiv"><div class="place " style="color: white;"><b>四川</b></div></div></td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">1</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">5</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">304</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">296</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">3</td></tr>
+                        <tr class="trth2">
+                            <td width="10%" class="trtd"  style="text-align: center;background-color: #1ce2d6;size: 5px" ><div class="trtddiv"><div class="place " style="color: white;"><b>广东</b></div></div></td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">1</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">5</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">304</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">296</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">3</td></tr>
+                        <tr class="trth2">
+                            <td width="10%" class="trtd"  style="text-align: center;background-color: #1ce2d6;size: 5px" ><div class="trtddiv"><div class="place " style="color: white;"><b>上海</b></div></div></td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">1</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">5</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">304</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">296</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">3</td></tr>
+                        <tr class="trth2">
+                            <td width="10%" class="trtd"  style="text-align: center;background-color: #1ce2d6;size: 5px" ><div class="trtddiv"><div class="place " style="color: white;"><b>台湾</b></div></div></td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">1</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">5</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">304</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">296</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">3</td></tr>
+                        <tr class="trth2">
+                            <td width="10%" class="trtd"  style="text-align: center;background-color: #1ce2d6;size: 5px" ><div class="trtddiv"><div class="place " style="color: white;"><b>香港</b></div></div></td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">1</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">5</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">304</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">296</td>
+                            <td class="zhuzi4" style="background-color: rgba(191,212,228,0.33);text-align: center">3</td></tr>
+
+
+                        </tbody>
+                    </table>
+                    <!--<div class="zhankai" style="margin-left: 250px;color: lightgray"><span>展开全部</span><::after></::after></div>-->
+                </div>
+            </div>
+            <h3 style="margin-left: 100px">中国疫情热力图</h3>
+            <div id="relitu">
+
+
+            </div>
+
+            <div class="Tpic" style="width: 800px;background-color: white;margin: 0 auto">
+                <div class="feixiantu">
+                    <h3 >国内疫情飞线图</h3>
+                    <img src="feixiantu.png" width="800px" height="476px">
+                </div>
+                <div class="chengzaitu">
+                    <h3 >国内疫情承载图</h3>
+                    <img src="chengzaitu.jpg" width="800px" height="476px">
+                </div>
+                <div class="duibitu">
+                    <h3 >国内疫情对比图</h3>
+                    <img src="duibitu.jpg" width="800px" height="476px">
+                </div>
+
+
+            </div>
+        </div>
+        <hr>
+        <div id="news"  style="width:800px;background-color: white;margin: 0 auto" >
+           
+            <h1 style="color: cornflowerblue;margin-left: 20px">新闻资讯</h1>
+
+            <div class="news-list">
+                <div class="news-list-left">
+                  <div class="news-list-item">
+                    <div class="author-time">
+                      <h4>发布时间：2020-12-20</h4>
+                    </div>
+                    <div class="news-des">
+                      <h3 class="news-title"><i></i><a href="http://gz.bendibao.com/news/20201117/content281061.shtml">2020年全国疫情最新消息今天新增（持续更新）</a></h3>
+                  
+                    </div>
+                  </div>
+                </div>
+           
+            <!-- <div class="news-list"></div> -->
+                <div class="news-list-left">
+                    <div class="news-list-item">
+                      <div class="author-time">
+                        <h4>发布时间：2020-12-20</h4>
+                      </div>
+                      <div class="news-des">
+                        <h3 class="news-title"><i></i><a href="https://new.qq.com/rain/a/20201220A04QHV00">中国最新疫情最新消息！全国新增确诊病例7例，均为境外输入病例（上海6例)</a></h3>
+                    
+                      </div>
+                    </div>
+                </div>
+                <div class="news-list-left">
+                    <div class="news-list-item">
+                      <div class="author-time">
+                        <h4>发布时间：2020-12-20</h4>
+                      </div>
+                      <div class="news-des">
+                        <h3 class="news-title"><i></i><a href="http://www.nhc.gov.cn/xcs/yqtb/list_gzbd.shtml">疫情通报</a></h3>
+                    
+                      </div>
+                    </div>
+                </div>
+                <div class="news-list-left">
+                    <div class="news-list-item">
+                      <div class="author-time">
+                        <h4>发布时间：2020-12-20</h4>
+                      </div>
+                      <div class="news-des">
+                        <h3 class="news-title"><i></i><a href="http://www.zuowen.biz/">全球疫情</a></h3>
+                    
+                      </div>
+                    </div>
+                </div>
+                <div class="news-list-left">
+                    <div class="news-list-item">
+                      <div class="author-time">
+                        <h4>发布时间：2020-12-20</h4>
+                      </div>
+                      <div class="news-des">
+                        <h3 class="news-title"><i></i><a href="https://baijiahao.baidu.com/s?id=1686573570150597514&wfr=spider&for=p">我驻美大使馆怒斥：这是对中国疫情的严峻挑战</a></h3>
+                    
+                      </div>
+                    </div>
+                </div>
+                <div class="news-list-left">
+                    <div class="news-list-item">
+                      <div class="author-time">
+                        <h4>发布时间：2020-4-25</h4>
+                      </div>
+                      <div class="news-des">
+                        <h3 class="news-title"><i></i><a href="https://baijiahao.baidu.com/s?id=1664948642274474931&wfr=spider&for=pc">国内疫情丨境外输入不断，将会第二次爆发？钟南山给出答案！</a></h3>
+                    
+                      </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <hr>
+        <div id="yimiao" style="width:800px;background-color: white;margin: 0 auto">
+            <h1 style="color: cornflowerblue">新冠疫苗</h1>
+            <div class="news-list">
+                <div class="news-list-left">
+                  <div class="news-list-item">
+                    <!-- <div class="author-time">
+                      <h4>发布时间：2020-12-20</h4>
+                    </div> -->
+                    <div class="news-des" >
+                      <h3 class="news-title"><i></i>新型冠状病毒疫苗</h3>
+                  
+                    </div>
+                    <div class="news-content-des">
+                        新冠疫苗一般指新型冠状病毒疫苗
+                        新型冠状病毒疫苗，是针对新型冠状病毒的疫苗。
+                        <p>
+                            2020年1月24日，中国疾控中心成功分离中国首株新型冠状病毒毒种。
+                            3月16日20时18分，重组新冠疫苗获批启动临床试验 。
+                            4月13日，中国新冠病毒疫苗进入II期临床试验 ；
+                            同日，一个由全球120多名科学家、医生、资助者和生产商组成的专家组发表公开宣言，
+                            承诺在世界卫生组织协调下，共同努力加快新冠疫苗的研发。
+                            6月19日，中国首个新冠mRNA疫苗获批启动临床试验。
+                            截至7月20日，全球当前有大约250种候选新冠病毒疫苗在研发中，
+                            其中至少有17种疫苗正处于临床试验阶段 。
+                        </p>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2020年8月5日，国药集团中国生物所属北京生物制品研究所新冠灭活疫苗生产车间通过国家
+                            相关部门组织的生物安全联合检查，具备使用条件。此前，该车间已取得新冠疫苗生产许可证；
+                            8月16日，陈薇院士团队新冠疫苗获得专利，系中国首个 ，
+                            该发明专利申请享有优先审查政策；
+                            8月20日，国药集团旗下中国生物新冠灭活疫苗的临床试验在秘鲁启动（Ⅲ期）；
+                            10月8日，中国同全球疫苗免疫联盟签署协议，正式加入“新冠肺炎疫苗实施计划”。
+                        </p>
+                    </div>
+                    
+                  </div>
+                </div>
+            </div>
+            <div class="xinguanyimiao" style="width:800px;background-color: white;position: center;margin: 0 auto">
+                <div>
+                    <div style="float:left;">
+                        <p><font size="6px"><b>新型冠状病毒疫苗</b></font></p>
+                        <p>
+                            2020年1月24日，中国疾控中心成功分离中国首株新型冠状病毒毒种。
+                            3月16日20时18分，重组新冠疫苗获批启动临床试验 。
+                            4月13日，中国新冠病毒疫苗进入II期临床试验 ；
+                            同日，一个由全球120多名科学家、医生、资助者和生产商组成的专家组发表公开宣言，
+                            承诺在世界卫生组织协调下，共同努力加快新冠疫苗的研发。
+                            6月19日，中国首个新冠mRNA疫苗获批启动临床试验。
+                            截至7月20日，全球当前有大约250种候选新冠病毒疫苗在研发中，
+                            其中至少有17种疫苗正处于临床试验阶段 。
+                        </p>
+                    </div>
+                    
+                     <img src="city.jpg" width="268"height="176">
+                   
+                </div>
+                <p><a href="https://baike.baidu.com/item/%E6%96%B0%E5%9E%8B%E5%86%A0%E7%8A%B6%E7%97%85%E6%AF%92%E7%96%AB%E8%8B%97/24286099?fromtitle=%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97&fromid=24611354&fr=aladdin">更多资讯</a> </p
+                
+                        </div>
+            <a href="https://baijiahao.baidu.com/s?id=1686649227159272467&wfr=spider&for=pc" style="text-decoration:none;" >
+                <div class="newsdiv"  style="background-color:#f1f9fe">
+                    <span style="color: black;margin-left: 20px"><font size="5px">中国新冠疫苗接种首批预计接种5000万人次，2月15日前完成</font></span><br>
+                    <span style="color: lightgray;margin-left: 20px;margin-top: 5px"><font size="2px">发布时间：2020-12-21</font></span>
+                </div>
+            </a>
+
+            <hr>
+            <a href="http://www.zt5.com/gp/cjkx/508936.html" style="text-decoration:none;" >
+                <div class="newsdiv" style="background-color:#f1f9fe">
+                    <span style="color: black;margin-left: 20px"><font size="5px">中国疫苗处全球第一方阵 中国新冠疫苗首针将于1月15日接种</font></span><br>
+                    <span style="color: lightgray;margin-left: 20px;margin-top: 5px"><font size="2px">发布时间：2020-12-21</font></span>
+                </div>
+            </a>
+
+            <hr>
+            <a href="http://www.zt5.com/gp/cjkx/508906.html" style="text-decoration:none;" >
+                <div class="newsdiv" style="background-color:#f1f9fe">
+                    <span style="color: black;margin-left: 20px"><font size="5px">巴西总统批辉瑞不管疫苗副作用 疫苗板块会不会再度崛起?</font></span><br>
+                    <span style="color: lightgray;margin-left: 20px;margin-top: 5px"><font size="2px">发布时间：2020-12-21</font></span>
+                </div>
+            </a>
+
+            <hr>
+            <a href="http://wf.bendibao.com/news/20201119/10473.shtm" style="text-decoration:none;"  >
+                <div class="newsdiv"  style="background-color:#f1f9fe">
+                    <span style="color: black;margin-left: 20px"><font size="5px">2020新冠疫苗最新消息（11月11日）</font></span><br>
+                    <span style="color: lightgray;margin-left: 20px;margin-top: 5px"><font size="2px">发布时间：2020-11-25</font></span>
+                </div>
+            </a>
+            <hr>
+            <a href="http://www.xinhuanet.com/world/2020-12/19/c_1126881697.htm?baike" style="text-decoration:none;"  >
+                <div class="newsdiv"  style="background-color:#f1f9fe">
+                    <span style="color: black;margin-left: 20px"><font size="5px">世卫组织宣布将获得近20亿剂新冠疫苗</font></span><br>
+                    <span style="color: lightgray;margin-left: 20px;margin-top: 5px"><font size="2px">发布时间：2020-12-29</font></span>
+                </div>
+            </a>
+            <hr>
+            <a href="https://baike.baidu.com/tashuo/browse/content?id=71260de170f040fc91d313b6&lemmaId=24286099&fromLemmaModule=pcBottom" style="text-decoration:none;"  >
+                <div class="newsdiv"  style="background-color:#f1f9fe">
+                    <span style="color: black;margin-left: 20px"><font size="5px">新冠疫苗重大突破！股价离奇暴跌！还有比这更惨的吗？</font></span><br>
+                    <span style="color: lightgray;margin-left: 20px;margin-top: 5px"><font size="2px">发布时间：2020-05-29</font></span>
+                </div>
+            </a>
+            <hr>
+            <a href="https://baike.baidu.com/tashuo/browse/content?id=786fffe2b199faf30978b903&lemmaId=24286099&fromLemmaModule=pcBottom" style="text-decoration:none;"  >
+                <div class="newsdiv"  style="background-color:#f1f9fe">
+                    <span style="color: black;margin-left: 20px"><font size="5px">新冠疫苗问世以后，口罩可以摘掉了吗？</font></span><br>
+                    <span style="color: lightgray;margin-left: 20px;margin-top: 5px"><font size="2px">发布时间：2020-12-10</font></span>
+                </div>
+            </a>
+            <hr>
+            <a href="https://baike.baidu.com/tashuo/browse/content?id=242a1308b2d1e9de411c454e&fromLemmaModule=pcTopicList&fromTopicId=936cd57106aa51d061412a9d" style="text-decoration:none;"  >
+                <div class="newsdiv"  style="background-color:#f1f9fe">
+                    <span style="color: black;margin-left: 20px"><font size="5px">全球新冠确诊超2485万！疫苗进展究竟如何？</font></span><br>
+                    <span style="color: lightgray;margin-left: 20px;margin-top: 5px"><font size="2px">发布时间：2020-09-21</font></span>
+                </div>
+            </a>
+            <hr>
+            <a href="https://baike.baidu.com/tashuo/browse/content?id=e5a2382680db660f7bac3738&fromLemmaModule=pcTopicList&fromTopicId=936cd57106aa51d061412a9d" style="text-decoration:none;"  >
+                <div class="newsdiv"  style="background-color:#f1f9fe">
+                    <span style="color: black;margin-left: 20px"><font size="5px">宋清辉：新冠疫苗或是拯救世界经济良药</font></span><br>
+                    <span style="color: lightgray;margin-left: 20px;margin-top: 5px"><font size="2px">发布时间：2020-11-27</font></span>
+                </div>
+            </a>
+        </div>
+        <hr>
+        <div id="control" style="width:800px;background-color: white;margin: 0 auto">
+            <h1 style="color: cornflowerblue">关于预防</h1>
+            <div class="xinguanyimiao" style="width:800px;background-color: white;position: center;margin: 0 auto;margin-bottom: 40px">
+                <p><font size="4px">症状概述</font></p>
+                <ul>
+                    <li>以发热、乏力、干咳为主要表现；</li>
+                    <li>少数患者伴有鼻塞、流涕、咽痛和腹泻等症状；</li>
+                    <li>具备人传人的能力，正确佩戴口罩加强防护</li>
+                    <li>多数预后良好，少数病情危重，甚至可致死亡</li>
+                </ul>
+                <p><font size="4px">预防</font></p>
+                <ul>
+                    <li>尽量减少外出，不要去人群聚集出，避免近距离接触任何又感冒或流感样症状的人；</li>
+                    <li>外出前往公共场所、就医和乘坐交通工具时，注意佩戴医用外科口罩或N95口罩；</li>
+                    <li>不要接触、购买和食用野生动物，避免在为未加防护的情况下接触野生东区和家禽家畜；</li>
+                    <li>注意手卫生，勤洗手，使用洗手液或肥皂，流水洗手，或使用含酒精成分的免洗洗手液；</li>
+                    <li>打喷嚏或咳嗽时不要用手去捂，要用手肘或纸巾遮住口、鼻；</li>
+
+                    <li>居室及工作场所保持清洁，勤开窗，多保持通风状态；</li>
+
+                    <li>注意多喝水、多休息、避免熬夜、适度运动，以提高个人免疫力；注意营养、合理饮食，肉类、禽类、蛋类要充分煮熟后食用；</li>
+
+                    <li>准备常用物资，如温度计、一次性口罩、家庭用消毒用品等。</li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+        <script>
+            function news1() {
+                window.open("http://gz.bendibao.com/news/20201117/content281061.shtml")
+            }
+            function news2() {
+                window.open("https://new.qq.com/rain/a/20201220A04QHV00")
+            }
+            function news3() {
+                window.open("http://www.nhc.gov.cn/xcs/yqtb/list_gzbd.shtml")
+            }
+            function news4() {
+                window.open("http://www.zuowen.biz/")
+            }
+            function news5() {
+                window.open("https://baijiahao.baidu.com/s?id=1686573570150597514&wfr=spider&for=pc")
+            }
+            function news6() {
+                window.open("https://baijiahao.baidu.com/s?id=1664948642274474931&wfr=spider&for=pc")
+            }
+            function yimiao1() {
+                window.open("https://baijiahao.baidu.com/s?id=1686649227159272467&wfr=spider&for=pc")
+            }
+            function yimiao2() {
+                window.open("http://www.zt5.com/gp/cjkx/508936.html")
+            }
+            function yimiao3() {
+                window.open("http://www.zt5.com/gp/cjkx/508906.html")
+            }
+            // function yimiao4() {
+            //     window.open("http://wf.bendibao.com/news/20201119/10473.shtm")
+            // }
+        </script>
+
+
+
+
+        <!--https://www.baidu.com/bh/dict/ydxx_8829639274010099959?tab=%E6%97%A5%E5%B8%B8&title=%E6%96%B0%E5%9E%8B%E5%86%A0%E7%8A%B6%E7%97%85%E6%AF%92%E8%82%BA%E7%82%8E&contentid=ydxx_8829639274010099959&query=%E9%A2%84%E9%98%B2%E6%96%B0%E5%9E%8B%E5%86%A0%E7%8A%B6%E7%97%85%E6%AF%92%E8%82%BA%E7%82%8E&sf_ref=dict_home&from=dicta-->
+    </div>
+</div>
+
+
+    <script>
+        function myFunction1(){
+            window.open("https://www.sohu.com/a/438629809_162758?_trans_=000014_bdss_dkwhfy");
+        }
+        function myFunction2(){
+            window.open("https://www.sohu.com/a/436172635_362042?_trans_=000014_bdss_dkwhfy");
+        }
+        function myFunction3(){
+            window.open("https://www.sohu.com/a/436181912_120868902?_trans_=000014_bdss_dkwhfy");
+        }
+
+    </script>
+<script type="text/javascript">
+    function change_div(id){
+        if (id == 'shouye' )
+        {
+            document.getElementById("guonei").style.display = 'none' ;
+            document.getElementById("shouye").style.display = 'block' ;
+        }
+        if (id == 'guonei' )
+        {
+            document.getElementById("shouye").style.display = 'none' ;
+            document.getElementById("guonei").style.display = 'block' ;
+        }
+    }
+</script>
+</body>
+</html>

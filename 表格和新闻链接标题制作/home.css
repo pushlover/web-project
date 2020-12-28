@@ -1,0 +1,359 @@
+img.picstyle{
+    width: 300px;
+    height: 220px;
+    text-align: center;
+    border-radius: 20px;
+
+}
+
+p.fontstyle{
+    width: 300px;
+    color: #226fb7;
+    margin: 5px;
+    font-family:  'Courier New', Courier, monospace;
+}
+
+h2{
+    color: #092c74;
+    width: 300px;
+    margin: 5px;
+}
+p.fontstyle_context{
+    width: 300px;
+    color: rgb(204, 43, 104);
+    margin: 5px;
+    font-family:  'Courier New', Courier, monospace;
+
+}
+
+div.Home_Card{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: left;
+/*margin: auto;*/
+
+}
+
+div.row_Card{
+    text-align: center;
+    float: left;
+    margin: auto;
+}
+
+
+div:hover.Home_Card{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /*margin: auto;*/
+}
+
+
+body {
+	margin: 0 150px;
+	background:url(city.jpg) no-repeat fixed;
+	background-size:cover;
+	
+}
+h1 {
+	text-align: center;
+	font-size: 70px;
+	text-shadow: 5px 6px 4px whitesmoke;
+	color: palegoldenrod;
+	letter-spacing: 35px;
+}
+#nav {
+	font-size: 30px;
+	text-align: center;
+	text-decoration: none;
+	/*background: url(../images/longway.jpg) no-repeat fixed;*/
+	
+	
+}
+.cite1 {
+	text-align: center;
+	font-size: 25px;
+	color: indigo;
+	background: linear-gradient(plum,pink);
+	border-radius: 10px;
+}
+.cite {
+	font-size: 25px;
+	color: indigo;
+	background: linear-gradient(plum,pink);
+	border-radius: 10px;
+}
+span {
+	border: dotted wheat 3px;
+	border-radius: 10px;
+	background: mistyrose;
+	opacity: 0.9;
+	padding:0 45px;
+    font-size: 25px;
+   
+}
+#p1,#p2 {
+	font-family: "宋体";
+	border: solid 2px beige;
+	border-radius: 35px;
+	float: center;
+	color:aliceblue;
+	padding: 20px;
+	margin: 10px auto;
+	width: 1150px;
+	/* height: 620px; */
+	font-size: 17px;
+	font: "宋体";
+}
+img {
+	margin: 35px;
+	float: right;
+	opacity: 0.8;
+	border-radius: 35px;
+}
+img:hover {
+	opacity: 1;
+}
+P::first-letter{
+	font-size: 50px;
+	color: lightyellow;
+}
+a {
+	color:steelblue;
+	text-decoration: none;
+}
+
+a:visited {
+	color:darkviolet;
+}
+a:hover {
+	color: red;
+}
+span:hover {
+	background:turquoise;
+}
+.main div{
+	padding: 20px;
+}
+
+#footer {
+	text-align: center;
+	color:lightgrey;
+	background: grey;
+	opacity: 0.8;
+	border-radius: 10px;
+}
+.fontstyle{
+	border: dotted wheat 3px;
+	border-radius: 10px;
+	background: mistyrose;
+	opacity: 0.9;
+	padding:0 45px;
+	font-size: 25px;
+}
+.fontstyle:hover {
+	background:turquoise;
+}
+#s1 {
+	border: dotted wheat 3px;
+	border-radius: 10px;
+	background: mistyrose;
+	opacity: 0.9;
+	padding:0 45px;
+	font-size: 25px;
+}
+.table{
+    border-collapse: separate;
+    border-spacing: 0;
+    text-align: center;
+    color:green;
+   
+}
+.table tbody{
+    color:#a4a4a4;
+    text-shadow: 1px 1px 1px white;
+    background-color: #d0d9e2;
+}
+.table caption{
+    font-size:1.25em;
+    padding-top: 0.692em;
+    padding-bottom: 0.692em;
+    background-color: #d4dde6;
+}
+.table caption[rel="prev"]{
+    float:left;
+    margin-left: 0.2em
+}
+.table caption[rel="next"]{
+    float:right;
+    margin-right: 0.2em;
+}
+.table caption a:link,.table caption a:visited{
+    text-decoration: none;
+    color:#333;
+    padding:0 0.2em;
+}
+.table caption a:hover,.table caption a:active,.table caption a:focus{
+    background-color: #6d8ab7;
+}
+.table thead th{
+    background-color: #d4dde6;
+    border-bottom: 1px solid #a9bacb;
+    font-size: 0.875em;
+}
+.table tbody{
+    color:#a4a4a4;
+    text-shadow: 1px 1px 1px white;
+    background-color: #d0d9e2;
+}
+.table th,.table td{
+    margin:0;
+    padding:0;
+}
+.table tbody td{
+    border-top: 1px solid #e0e0e0;
+    border-right: 1px solid #9f9fa1;
+    border-bottom: 1px solid #acacad;
+    border-left: 1px solid #dfdfe0;
+}
+.table tbody a{
+    display: block;
+    text-decoration: none;
+    color: #333;
+    background-color: #c0c8d2;
+    font-weight: bold;
+    padding:0.358em 0.692em 0.358em 0.692em;
+}
+.table tbody a:hover,.table tbody a:focus,.table tbody a:active,
+.table tbody .selected a:link,.table tbody .selected a:visited,.table tbody .selected a:hover,.table tbody .selected a:focus,
+.table tbody .selected a:active{
+    background-color: #6d8ab7;
+    color:white;
+    text-shadow: 1px 1px 2px #22456b;
+}
+.table tbody td:hover,
+.table tbody td.selected{
+    border-top: 1px solid #2a3647;
+    border-right: 1px solid #465977;
+    border-bottom: 1px solid #576e92;
+    border-left: 1px solid #466080;
+}
+
+
+
+ 
+.clearfix { 
+  *zoom: 1; 
+}
+.clearfix:before, .clearfix:after { 
+  display: table; 
+  line-height: 0; 
+  content: "";
+}
+.clearfix:after { 
+  clear: both;
+} 
+ 
+.navbar {
+    background: url(../images/index/header_shadow.png) no-repeat left top;
+    background-size: 100% 54px;
+}
+.container {
+	width: 1000px;
+	margin: 0 auto;
+}
+.navbar .navbar-content a {
+	color: #FFF;
+	line-height: 54px;
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+}
+.navbar .navbar-content a:hover {
+	color: #CCC;
+}
+ 
+.index-bg {
+	width: 100%;
+	height: 500px;
+ 
+	position: absolute;
+	top: -50px;
+	z-index: -10;
+}
+ 
+.news-list {
+	margin: 50px 0;
+	background-color: #FFF;
+	border-radius: 5px;
+	border: 1px solid transparent; 
+	padding: 30px 20px;
+ 
+	min-height: 200px;
+}
+
+.about .about-des {
+	border-left: 5px solid #CCC;
+	margin-top: 15px;
+}
+ 
+.about .about-des p {
+	padding-left: 10px;
+	line-height: 28px;
+	text-indent: 2em;
+}
+ 
+.news-list-left {
+	float: left;
+	width: 729px;
+	/* margin-bottom: 50px; */
+}
+ 
+.news-list-right {
+	float: right;
+	width: 229px;
+}
+ 
+.news-list-item {
+	padding: 20px 30px;
+}
+ 
+.author-time {
+	font-size: 14px;
+}
+.news-des {
+    padding-bottom: 20px;
+    
+	border-bottom: 2px solid #CCC;
+}
+.news-title {
+	font-size: 16px;
+}
+i {
+	display: inline-block;
+	width: 47px;
+	height: 47px;
+    color: coral;
+	/* height: 43px; */
+	margin-right: 10px;
+	background: url(news-icon.png) left center no-repeat;
+	vertical-align: middle;
+}
+.news-title a {
+	color: green;
+}
+.news-title a:hover {
+	text-decoration: underline;
+}
+.news-content-des {
+	line-height: 28px;
+}
+ 
+.copyright {
+	clear: both;
+	text-align: center;
+	color: gray;
+ 
+	/* border-top: 2px solid #CCC; */
+	margin-top: 5px;
+	padding: 20px 0; 
+} 
