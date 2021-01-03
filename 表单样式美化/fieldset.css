@@ -1,0 +1,118 @@
+fieldset{
+	margin:1em 0;
+	padding:1em;
+	border:1px solid #ccc;
+	background: #f8f8f8;
+}
+
+legend{
+	font-weight:bold;
+}
+label{
+	display: block;
+	cursor: pointer;
+}
+input{
+	width: 20em;
+}
+textarea{
+	width: 100%;
+	height: 10em;
+}
+input[type="text"]{
+	width: 20em
+}
+/* input.radio,input.checkbox,input.submit{
+	width: auto;
+}
+#remember-me .radio{
+	margin-right: 1em;
+} */
+input[type="text"]:focus,textarea:focus{
+	background: #ffc;
+}
+input[type="text"],textarea{
+	border-top: 1px solid #999;
+	border-right: 1px solid #999;
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+}
+.required{
+	font-size: 0.75em;
+	color: #760000;
+}
+label{
+	float: left;
+	width: 10em;
+	cursor: pointer;
+}
+fieldset {
+	padding:10px;
+	margin-top:5px;
+	border:1px solid #1E7ACE;
+	background:#fff;
+}
+	
+fieldset legend {
+color:#1E7ACE;
+font-weight:bold;
+padding:3px 20px 3px 20px;
+border:1px solid #1E7ACE;  
+background:#fff;
+}
+	
+fieldset label {
+float:left;
+width:120px;
+text-align:right;
+padding:4px;
+margin:2px;
+}
+body{
+	background: whitesmoke;
+}	
+fieldset div {
+clear:left;
+margin-bottom:2px;
+}
+#login-box {
+    border: 1px solid blue;
+    width: 30%;
+   
+   
+    opacity: 90%;
+    background-color: wheat;
+    padding: 20px 50px;
+}
+#login-box .form .item input {
+    width: 200px; /* 设置合适的宽度 */
+    border: 0; /* 首先将边界取消，方便下面修改下部边界宽度 */
+    border-bottom: 5px solid white; /* 将下边界进行修改，显示出横线效果 */
+    font-size: 18px; /* 将字体适当的变大加粗 */
+    background: #ffffff00; /* 将输入框设置为透明 */
+    color: white; /* 上面的文本颜色设置为白色，但是placeholder的颜色要单独设置 */
+	padding: 5px 10px; 
+	margin-left: 25px;
+}
+body {
+    
+    background-size: 100% auto; /* 设置背景的大小 */
+    background-repeat: no-repeat; /* 将背景设置为不重复显示 */
+}
+#login-box .form .item i {
+    color: white;
+    font-size: 18px;
+}
+
+input[type=radio] {
+	-webkit-appearance: none;  
+	-moz-appearance: none;
+	width: 11px;
+	border-radius: 2px;
+	height: 11px;
+	background-color: transparent;
+	border: 1px solid #1BBA79;
+  }
+  input[type=radio]:focus, input[type=checkbox]:hover{
+	border: 1px solid #1BBA79 !important;
+  }

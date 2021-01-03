@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8" />
+	<title>FieldSet:表单样式</title>
+	<link rel="stylesheet" type="text/css" href="fieldset.css" />
+
+</head>
+<body>
+	<fieldset>
+	
+		</div>
+		<legend>Your Contact Details</legend>
+		<div id="login-box">
+			<div class="form">
+				
+				<div class="item"> <!-- username部分 -->
+					<i></i> <!-- 将来用来绘制username前面的图标 -->Name:<em class="required">(required)</em>
+					<input type="text" placeholder="username" name="username"> <!-- 用文本框实现的username的输入 -->
+				</div>
+
+				<div class="item"> <!-- password部分 -->
+					<i></i> <!-- 将来用来绘制password前面的图标 -->Email Address:
+					<input type="text" placeholder="email" name="email"> <!-- 用password文本框实现的密码输入 -->
+				</div>
+				<div class="item"> <!-- password部分 -->
+					<i></i> <!-- 将来用来绘制password前面的图标 -->Web Address:
+					<input type="text"  placeholder="url" name="url" id="url"> <!-- 用password文本框实现的密码输入 -->
+				</div>
+
+			</div>
+		</div>
+		
+	</fieldset>
+	<fieldset>
+		<legend>Comments</legend>
+		<div>
+			<label for="text">Message:</label>
+			
+			<textarea name="text" id="text" style="border:0;border-radius:5px;background-color:rgba(241,241,241,.98);width: 355px;height: 100px;padding: 10px;resize: none;"></textarea>
+				
+			
+		</div>
+	</fieldset>
+	<fieldset>
+		<legend>Remember Me</legend>
+		<div>
+			<label for="remember-yes">
+				<input id="remember-yes" class="radio" name="remember" type="radio" value="yes" />Yes
+			</label>
+		
+			<label for="remember-no">
+				<input id="remember-no " class="radio" name="remember" type="radio" value="no" checked="checked" />No
+			</label>
+		</div>
+	</fieldset>
+</body>
+</html>
